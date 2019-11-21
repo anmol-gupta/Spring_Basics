@@ -20,5 +20,14 @@ public class TrackCoach implements Coach {
 		// TODO Auto-generated method stub
 		return "Hey!!!" + fortuneService.getFortune();
 	}
+	// init-method
+	public void doMyStartupStuff() {
+		System.out.println("I am a sysout from init-method");
+	}
+	
+	//destroy-method
+	public void doMyCleanupStuff() {
+		System.out.println("I am a sysout from destroy method");
+	}
 
 }
